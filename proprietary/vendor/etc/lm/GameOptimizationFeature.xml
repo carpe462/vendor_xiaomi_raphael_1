@@ -21,7 +21,7 @@
     <Name>GameOptimization</Name>
     <Libname>libgameoptfeature.so</Libname>
     <Configs>
-        <Enable>1</Enable>
+        <Enable>0</Enable>
         <MIN_DDR_FREQ>1144</MIN_DDR_FREQ>
         <MAX_MIN_DDR_FREQ>2086</MAX_MIN_DDR_FREQ>
     </Configs>
@@ -79,6 +79,12 @@
                    <Primary>true</Primary>
                    <AsyncId>VENDOR_HINT_ACTIVITY_STOP</AsyncId>
                    <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_WORKLOAD_HEAVY</AsyncId>
+                   <AsyncType>1</AsyncType>
                 </Trigger>
 
             </Triggers>
